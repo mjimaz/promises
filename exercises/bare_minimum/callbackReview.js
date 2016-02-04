@@ -38,8 +38,10 @@ fs.readFile(__dirname + '/../../README.md', 'utf8', function (err, content) {
 // HINT: You can get an array of lines by splitting on the '\n' character
 var pluckFirstLineFromFile = function (filePath, callback
 ) {
-  // YOUR CODE HERE
-  callback();
+  fs.readFile(filePath, 'utf8', function(err, data){ 
+    var firstLine = data ? data.split('\n')[0] : data;
+    callback(err, firstLine);
+  });
 };
 
 // This function should retrieve the status code of a GET request to `url`
