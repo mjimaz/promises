@@ -40,4 +40,4 @@ var getStatusCodeAsync = function (url) {
 module.exports = {
   getStatusCodeAsync: getStatusCodeAsync,
   pluckFirstLineFromFileAsync: pluckFirstLineFromFileAsync
-}
+};
