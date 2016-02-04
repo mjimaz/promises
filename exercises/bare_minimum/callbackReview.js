@@ -51,7 +51,6 @@ var getStatusCode = function (url, callback
 ) {
   // YOUR CODE HERE
   request(url, function(err, response, body){
-    console.log('error:', err);
     if(err) {
       callback(err);
     }else{
